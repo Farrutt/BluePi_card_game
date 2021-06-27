@@ -13,7 +13,9 @@ class insert_mongo:
                 "number_of_cards" : number_of_card,
                 "card" : data_card,
                 "click" : 0,
-                "status_game_success" : False
+                "status_game_success" : False,
+                "CreateAt" : datetime.datetime.utcnow(),
+                "UpdateAt" : datetime.datetime.utcnow()
             }
             result_insert = mycol.insert_one(dic_insert)
             id_game = str(result_insert.inserted_id)

@@ -3,7 +3,7 @@ from config.value import *
 from method.login_process import *
 # app = FastAPI(debug=True)
 
-@app.post("/login")
+@app.post("/card_game/login")
 async def login(request: Request,response: Response):
     try:
         data_login = await request.json()
@@ -30,7 +30,7 @@ async def login(request: Request,response: Response):
             "data" : None
             }
 
-@app.post("/add_user")
+@app.post("/card_game/add_user")
 async def login(request: Request,response: Response):
     try:
         data_user = await request.json()

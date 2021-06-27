@@ -112,7 +112,7 @@ def func_check_game_success(transaction_id,card_all,number_of_cards,username,res
                             return [False,result_update_game[1]]
                     else:
                         pass
-        return [True,'Pending']
+        return [True,'In_progress']
     except Exception as e:
         return [False,str(e)]
 

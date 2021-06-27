@@ -3,7 +3,7 @@ from config.value import *
 from method.game_process import *
 
 # NEW GAME
-@app.post("/new_game")
+@app.post("/card_game/new_game")
 async def new_game(response: Response,request: Request):
     try:
         try:
@@ -36,7 +36,7 @@ async def new_game(response: Response,request: Request):
             }
 
 # Get Global Score
-@app.get("/get_global_score")
+@app.get("/card_game/get_global_score")
 async def global_score(response: Response,request: Request):
     try:
         try:
@@ -69,7 +69,7 @@ async def global_score(response: Response,request: Request):
             }
 
 # Get my score
-@app.get("/get_my_score")
+@app.get("/card_game/get_my_score")
 async def my_score(response: Response,request: Request):
     try:
         try:
@@ -101,7 +101,8 @@ async def my_score(response: Response,request: Request):
             "data" : None
             }
 
-@app.post("/action_open_card")
+# เมื่อคลิกเปิดไพ่ 1 ครั้ง
+@app.post("/card_game/action_open_card")
 async def action_open_card(response: Response,request: Request):
     try:
         try:
@@ -111,6 +112,13 @@ async def action_open_card(response: Response,request: Request):
             response.status_code = 401
             return {"status_code" : 401,"message": 'Unauthorized',"data" : None}
         body_req = await request.json()
+        if ((body_req['transaction_id'] == None or body_req['transaction_id'] == '') or (body_req['position_row'] == None or body_req['position_row'] == '') or (body_req['position_column'] == None or body_req['position_column'] == '')):
+            print ('SSS')
+            return {
+            "status_code" : 400,
+            "message": 'Invalid parameter',
+            "data" : None
+            }
         transaction_id = body_req['transaction_id']
         position_row = int(body_req['position_row'])
         position_column = int(body_req['position_column'])
@@ -136,5 +144,4 @@ async def action_open_card(response: Response,request: Request):
             "message": str(e),
             "data" : None
             }
-
             

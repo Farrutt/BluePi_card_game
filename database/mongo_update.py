@@ -10,7 +10,7 @@ class update_mongo:
             self.click_count = int(click_count) + 1 
             mycol = mydb["transaction_card"]
             text_find = { "_id": ObjectId(self.transaction_id) }
-            text_update = { "$set": { "click": self.click_count,"card":self.card_all}}
+            text_update = { "$set": { "click": self.click_count,"card":self.card_all,"CreateAt" : datetime.datetime.utcnow()}}
             result_update_card = mycol.update_one(text_find,text_update)
             if result_update_card.modified_count != 0:
                 return [True,'update success']

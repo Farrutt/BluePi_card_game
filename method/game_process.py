@@ -78,6 +78,7 @@ def process_open_card(token_header,transaction_id,position_column,position_row):
             if time_exp < ts_now:
                 return [False,'Token has expire']
             result_select_game = select_mongo().select_transaction_card(transaction_id)
+            this_card = result_select_game[1]['card'][position_column][position_row]['number']
             if result_select_game[0] == True:
                 if result_select_game[1]['status_game_success'] == False:
                     if result_select_game[1]['username'] == username:
@@ -93,7 +94,8 @@ def process_open_card(token_header,transaction_id,position_column,position_row):
                                 result_score_now = func_get_score(username)
                                 if result_score_now[0] == True:
                                     dict_data = {
-                                        "card" : result_gen_response[1],
+                                        "this_card" : this_card,
+                                        "card_all" : result_gen_response[1],
                                         "click" : result_click,
                                         "status_game" : result_check_success[1],
                                         "global_score" : result_score_now[1]['global'],
@@ -115,6 +117,4 @@ def process_open_card(token_header,transaction_id,position_column,position_row):
         else:
             return [False,'Invalid Token']
     except Exception as e:
-        print (e)
         return [False,str(e)]
-
