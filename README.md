@@ -136,6 +136,7 @@ api > method > function,database > method > api
 **Method: POST**
 
 เป็น api ที่ใช้ในการเปิดไพ่ในแต่ละครั้ง(เมื่อคลิกเลือกไพ่ใช้ api ตัวนี้) โดยต้องใส่ request Header Authorization ในรูปแบบ Type Bearer Token คือ Token ที่ได้จากการ Login และ request แบบ json body ซึ่งเป็น key 3 ตัว คือ
+
 **Request**
 
 * transaction_id (Type: String) คือ id ของชุดไพ่ ที่ได้จากการใช้ api /card_game/new_game 
