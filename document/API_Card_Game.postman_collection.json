@@ -1,0 +1,730 @@
+{
+	"info": {
+		"_postman_id": "723c2684-dd0c-4c39-99b8-131a3a6274e2",
+		"name": "API_Card_Game",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"dartz\",\r\n    \"password\" : \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_card_game}}/card_game/login",
+					"host": [
+						"{{url_card_game}}"
+					],
+					"path": [
+						"card_game",
+						"login"
+					]
+				},
+				"description": "<h1>API Login</h1>\r\n<h3>เป็น Api ที่ใช้สำหรับ login เข้าสู่ระบบเกมส์ โดยใส่ค่า username, password จะได้ response ออกมาเป็น token</h3>\r\n<h4>Request type: JSON</h4>\r\n<h4>Request</h4>\r\n<p><strong>username</strong>: username ของผู้ใช้ที่ได้ทำการสมัครไว้</p>\r\n<p><strong>password</strong>: password ของผู้ใช้ที่ได้ทำการสมัครไว้</p>\r\n<h4>Response Key</h4>\r\n<p><strong>status_code</strong>: status_code ของ api</p>\r\n<p><strong>message</strong>: ข้อความอธิบาย response</p>\r\n<p><strong>data</strong>: data ที่ได้จาก api</p>\r\n<h4>Response message</h4>\r\n<p>\"Unauthorized invalid username or password\" คือ username หรือ password ผิด</p>\r\n<p>\"login success\" คือ login สำเร็จ</p>"
+			},
+			"response": [
+				{
+					"name": "API login (status 401)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"dartz\",\r\n    \"password\" : \"123456sss\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_card_game}}/card_game/login",
+							"host": [
+								"{{url_card_game}}"
+							],
+							"path": [
+								"card_game",
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 15:57:30 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "85"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 401,\n    \"message\": \"Unauthorized invalid username or password\",\n    \"data\": null\n}"
+				},
+				{
+					"name": "API login (status 200)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"dartz\",\r\n    \"password\" : \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_card_game}}/card_game/login",
+							"host": [
+								"{{url_card_game}}"
+							],
+							"path": [
+								"card_game",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 15:53:39 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "190"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 200,\n    \"message\": \"login success\",\n    \"data\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRhcnR6IiwicGFzc3dvcmQiOiIxMjM0NTYifQ.-rpKLgowVcq1qGAp_ytN9ME_OdwKgSJJUlkxBkLl0sA\"\n}"
+				}
+			]
+		},
+		{
+			"name": "add_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"dartz\",\r\n    \"password\" : \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_card_game}}/card_game/add_user",
+					"host": [
+						"{{url_card_game}}"
+					],
+					"path": [
+						"card_game",
+						"add_user"
+					]
+				},
+				"description": "<h1>API Add User</h1>\r\n<h3>เป็น Api ที่ใช้สำหรับ เพิ่ม, สมัคร user โดยตั้งค่า username, password ที่ต้องการเพิ่ม</h3>\r\n<h4>Request type: JSON</h4>\r\n<h4>Request</h4>\r\n<p><strong>username</strong>: username ของผู้ใช้ที่ต้องการสมัคร</p>\r\n<p><strong>password</strong>: password ของผู้ใช้ที่ต้องการสมัคร</p>\r\n<h4>Response Key</h4>\r\n<p><strong>status_code</strong>: status_code ของ api</p>\r\n<p><strong>message</strong>: ข้อความอธิบาย response</p>\r\n<p><strong>data</strong>: data ที่ได้จาก api</p>\r\n<h4>Response message</h4>\r\n<p>\"username is exist\" คือ มี username นี้ในระบบแล้ว</p>\r\n<p>\"add_user success\" คือ เพิ่ม user สำเร็จ</p>"
+			},
+			"response": [
+				{
+					"name": "API add_user (status 400)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"farrutt\",\r\n    \"password\" : \"1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_card_game}}/card_game/add_user",
+							"host": [
+								"{{url_card_game}}"
+							],
+							"path": [
+								"card_game",
+								"add_user"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 15:58:48 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "61"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 400,\n    \"message\": \"username is exist\",\n    \"data\": null\n}"
+				},
+				{
+					"name": "API add_user (status 200)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"farrutt\",\r\n    \"password\" : \"1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_card_game}}/card_game/add_user",
+							"host": [
+								"{{url_card_game}}"
+							],
+							"path": [
+								"card_game",
+								"add_user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 15:58:24 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "99"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 200,\n    \"message\": \"add_user success\",\n    \"data\": {\n        \"username\": \"farrutt\",\n        \"password\": \"1234567\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "new_game",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRhcnR6IiwicGFzc3dvcmQiOiIxMjM0NTYifQ.p2fwtTotuypKAsDBk4Ig0ipx9bpUeAUpXfvJHUpJPoQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url_card_game}}/card_game/new_game",
+					"host": [
+						"{{url_card_game}}"
+					],
+					"path": [
+						"card_game",
+						"new_game"
+					]
+				},
+				"description": "<h1>API New game</h1>\r\n<h3>เป็น Api ที่ใช้สำหรับปุ่ม newgame โดยจะทำการสุ่มเลขหน้าไพ่ออกมาใหม่ทั้งหมด จะได้ response เป็น id ของชุดไพ่</h3>\r\n<h4>Request</h4>\r\n<p><strong>-</strong></p>\r\n<h4>Auth</h4>\r\n<p><strong>Type</strong>: Bearer Token</p>\r\n<p>Token ที่ได้จากการ Login</p>\r\n<h4>Response Key</h4>\r\n<p><strong>status_code</strong>: status_code ของ api</p>\r\n<p><strong>message</strong>: ข้อความอธิบาย response</p>\r\n<p><strong>data</strong>: data ที่ได้จาก api</p>\r\n<h4>Response message</h4>\r\n<p>\"fail\" คือ ไม่สำเร็จ</p>\r\n<p>\"success\" คือ สำเร็จ</p>\r\n<p>\"Invalid Token\" คือ Token ผิด</p>\r\n<p>\"Token has expire\" คือ Token หมดอายุ(1วัน)</p>"
+			},
+			"response": [
+				{
+					"name": "API new_game (status 400)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url_card_game}}/card_game/new_game",
+							"host": [
+								"{{url_card_game}}"
+							],
+							"path": [
+								"card_game",
+								"new_game"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 15:59:46 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "59"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 400,\n    \"message\": \"fail\",\n    \"data\": \"Invalid Token\"\n}"
+				},
+				{
+					"name": "API new_game (status 200)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url_card_game}}/card_game/new_game",
+							"host": [
+								"{{url_card_game}}"
+							],
+							"path": [
+								"card_game",
+								"new_game"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 15:54:16 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "73"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 200,\n    \"message\": \"success\",\n    \"data\": \"60d89f28e3eea15a04da27f9\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get_global_score",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRhcnR6IiwicGFzc3dvcmQiOiIxMjM0NTYifQ.p2fwtTotuypKAsDBk4Ig0ipx9bpUeAUpXfvJHUpJPoQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_card_game}}/card_game/get_global_score",
+					"host": [
+						"{{url_card_game}}"
+					],
+					"path": [
+						"card_game",
+						"get_global_score"
+					]
+				},
+				"description": "<h1>API Get global score</h1>\r\n<h3>เป็น Api ที่ใช้สำหรับ get ค่าคะแนนที่ดีที่สุดของ user ทั้งหมด</h3>\r\n<h4>Request</h4>\r\n<p><strong>-</strong></p>\r\n<h4>Auth</h4>\r\n<p><strong>Type</strong>: Bearer Token</p>\r\n<p>Token ที่ได้จากการ Login</p>\r\n<h4>Response Key</h4>\r\n<p><strong>status_code</strong>: status_code ของ api</p>\r\n<p><strong>message</strong>: ข้อความอธิบาย response</p>\r\n<p><strong>data</strong>: data ที่ได้จาก api</p>\r\n<h4>Response message</h4>\r\n<p>\"fail\" คือ ไม่สำเร็จ</p>\r\n<p>\"success\" คือ สำเร็จ</p>\r\n<p>\"Invalid Token\" คือ Token ผิด</p>\r\n<p>\"Token has expire\" คือ Token หมดอายุ(1วัน)</p>"
+			},
+			"response": [
+				{
+					"name": "API get_global_score (status 200)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_card_game}}/card_game/get_global_score",
+							"host": [
+								"{{url_card_game}}"
+							],
+							"path": [
+								"card_game",
+								"get_global_score"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 16:01:20 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "49"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 200,\n    \"message\": \"success\",\n    \"data\": 12\n}"
+				},
+				{
+					"name": "API get_global_score (status 400)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_card_game}}/card_game/get_global_score",
+							"host": [
+								"{{url_card_game}}"
+							],
+							"path": [
+								"card_game",
+								"get_global_score"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 16:01:41 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "59"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 400,\n    \"message\": \"fail\",\n    \"data\": \"Invalid Token\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get_my_score",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRhcnR6IiwicGFzc3dvcmQiOiIxMjM0NTYifQ.p2fwtTotuypKAsDBk4Ig0ipx9bpUeAUpXfvJHUpJPoQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_card_game}}/card_game/get_my_score",
+					"host": [
+						"{{url_card_game}}"
+					],
+					"path": [
+						"card_game",
+						"get_my_score"
+					]
+				},
+				"description": "<h1>API New game</h1>\r\n<h3>เป็น Api ที่ใช้สำหรับ get คะแนนที่ดีที่สุดของตัว user เอง</h3>\r\n<h4>Request</h4>\r\n<p><strong>-</strong></p>\r\n<h4>Auth</h4>\r\n<p><strong>Type</strong>: Bearer Token</p>\r\n<p>Token ที่ได้จากการ Login</p>\r\n<h4>Response Key</h4>\r\n<p><strong>status_code</strong>: status_code ของ api</p>\r\n<p><strong>message</strong>: ข้อความอธิบาย response</p>\r\n<p><strong>data</strong>: data ที่ได้จาก api</p>\r\n<h4>Response message</h4>\r\n<p>\"fail\" คือ ไม่สำเร็จ</p>\r\n<p>\"success\" คือ สำเร็จ</p>\r\n<p>\"Invalid Token\" คือ Token ผิด</p>\r\n<p>\"Token has expire\" คือ Token หมดอายุ(1วัน)</p>"
+			},
+			"response": [
+				{
+					"name": "API get_global_score (status 400)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_card_game}}/card_game/get_my_score",
+							"host": [
+								"{{url_card_game}}"
+							],
+							"path": [
+								"card_game",
+								"get_my_score"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 16:02:55 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "59"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 400,\n    \"message\": \"fail\",\n    \"data\": \"Invalid Token\"\n}"
+				},
+				{
+					"name": "API get_my_score (status 200)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_card_game}}/card_game/get_my_score",
+							"host": [
+								"{{url_card_game}}"
+							],
+							"path": [
+								"card_game",
+								"get_my_score"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 16:01:53 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "49"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 200,\n    \"message\": \"success\",\n    \"data\": 12\n}"
+				}
+			]
+		},
+		{
+			"name": "action_open_card",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRhcnR6IiwicGFzc3dvcmQiOiIxMjM0NTYifQ.p2fwtTotuypKAsDBk4Ig0ipx9bpUeAUpXfvJHUpJPoQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"transaction_id\": \"60d88d97e3eea128cc434a5d\",\r\n    \"position_column\": \"2\",\r\n    \"position_row\": \"1\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_card_game}}/card_game/action_open_card",
+					"host": [
+						"{{url_card_game}}"
+					],
+					"path": [
+						"card_game",
+						"action_open_card"
+					]
+				},
+				"description": "<h1>API action open card</h1>\r\n<h3>เป็น Api ที่ใช้สำหรับกดเปิดหน้าไพ่ และจะ process ว่าจับคู่ถูกไหม, คลิกไปกี่ครั้ง, ดูคะแนนของ user และ global ด้วย   </h3>\r\n<h4>Request</h4>\r\n<p><strong>transaction_id</strong>: transaction_id ของเกมส์(ชุดไพ่)</p>\r\n<p><strong>position_column</strong>: ตำแหน่ง column ของไพ่</p>\r\n<p><strong>position_row</strong>: ตำแหน่ง row ของไพ่</p>\r\n<h4>Auth</h4>\r\n<p><strong>Type</strong>: Bearer Token</p>\r\n<p>Token ที่ได้จากการ Login</p>\r\n<h4>Response Key</h4>\r\n<p><strong>status_code</strong>: status_code ของ api</p>\r\n<p><strong>message</strong>: ข้อความอธิบาย response</p>\r\n<p><strong>data</strong>: data ที่ได้จาก api</p>\r\n<h4>Response message</h4>\r\n<p>\"fail\" คือ ไม่สำเร็จ</p>\r\n<p>\"success\" คือ สำเร็จ</p>\r\n<p>\"Invalid Token\" คือ Token ผิด</p>\r\n<p>\"Token has expire\" คือ Token หมดอายุ(1วัน)</p>\r\n<p>\"This card has been open\" คือ ไพ่ใบนี้ถูกเปิดไปแล้ว</p>\r\n<p>\"This card has been paired successfully\" คือ ไพ่ใบนี้จับคู่สำเร็จแล้ว</p>\r\n<p>\"This game has been completed\" คือ เกมส์นี้จบไปแล้ว</p>\r\n<p>\"Invalid username in this transaction id\" คือ username ไม่ตรงกับชุดไพ่</p>"
+			},
+			"response": [
+				{
+					"name": "API action_open_card (status 200)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transaction_id\": \"60d88d97e3eea128cc434a5d\",\r\n    \"position_column\": \"2\",\r\n    \"position_row\": \"1\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_card_game}}/card_game/action_open_card",
+							"host": [
+								"{{url_card_game}}"
+							],
+							"path": [
+								"card_game",
+								"action_open_card"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 15:54:58 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "855"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 200,\n    \"message\": \"success\",\n    \"data\": {\n        \"this_card\": 5,\n        \"card_all\": [\n            [\n                {\n                    \"number\": null,\n                    \"status_open\": false,\n                    \"status_success\": false\n                },\n                {\n                    \"number\": null,\n                    \"status_open\": false,\n                    \"status_success\": false\n                },\n                {\n                    \"number\": null,\n                    \"status_open\": false,\n                    \"status_success\": false\n                },\n                {\n                    \"number\": null,\n                    \"status_open\": false,\n                    \"status_success\": false\n                }\n            ],\n            [\n                {\n                    \"number\": null,\n                    \"status_open\": false,\n                    \"status_success\": false\n                },\n                {\n                    \"number\": null,\n                    \"status_open\": false,\n                    \"status_success\": false\n                },\n                {\n                    \"number\": null,\n                    \"status_open\": false,\n                    \"status_success\": false\n                },\n                {\n                    \"number\": null,\n                    \"status_open\": false,\n                    \"status_success\": false\n                }\n            ],\n            [\n                {\n                    \"number\": null,\n                    \"status_open\": false,\n                    \"status_success\": false\n                },\n                {\n                    \"number\": 5,\n                    \"status_open\": true,\n                    \"status_success\": false\n                },\n                {\n                    \"number\": null,\n                    \"status_open\": false,\n                    \"status_success\": false\n                },\n                {\n                    \"number\": null,\n                    \"status_open\": false,\n                    \"status_success\": false\n                }\n            ]\n        ],\n        \"click\": 21,\n        \"status_game\": \"In_progress\",\n        \"global_score\": 12,\n        \"my_best\": 12\n    }\n}"
+				},
+				{
+					"name": "Api action_open_card (status 400)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transaction_id\": \"60d88d97e3eea128cc434a5d\",\r\n    \"position_column\": \"2\",\r\n    \"position_row\": \"1\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_card_game}}/card_game/action_open_card",
+							"host": [
+								"{{url_card_game}}"
+							],
+							"path": [
+								"card_game",
+								"action_open_card"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 27 Jun 2021 16:04:42 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "69"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 400,\n    \"message\": \"fail\",\n    \"data\": \"This card has been open\"\n}"
+				}
+			]
+		}
+	]
+}

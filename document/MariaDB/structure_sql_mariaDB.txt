@@ -1,0 +1,24 @@
+-- bluepi.tb_account definition
+
+CREATE TABLE `tb_account` (
+  `id` varchar(36) NOT NULL DEFAULT uuid(),
+  `username` varchar(100) DEFAULT NULL,
+  `data_encode` text DEFAULT NULL,
+  `best_score` int(11) DEFAULT NULL,
+  `createAt` datetime DEFAULT current_timestamp(),
+  `updateAt` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+-- bluepi.tb_token definition
+
+CREATE TABLE `tb_token` (
+  `id` varchar(36) NOT NULL DEFAULT uuid(),
+  `username` varchar(100) DEFAULT NULL,
+  `token` text DEFAULT NULL,
+  `time_expire` int(11) DEFAULT NULL,
+  `createAt` datetime DEFAULT current_timestamp(),
+  `updateAt` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

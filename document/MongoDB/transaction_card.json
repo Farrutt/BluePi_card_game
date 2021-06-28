@@ -1,0 +1,821 @@
+[{
+  "_id": {
+    "$oid": "60d733cfe3eea114d012ce0c"
+  },
+  "username": "dartz",
+  "number_of_cards": 12,
+  "card": [
+    [
+      {
+        "number": 5,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 2,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 5,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 6,
+        "status_open": false,
+        "status_success": false
+      }
+    ],
+    [
+      {
+        "number": 6,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 2,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 3,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 1,
+        "status_open": false,
+        "status_success": false
+      }
+    ],
+    [
+      {
+        "number": 3,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 4,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 4,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 1,
+        "status_open": false,
+        "status_success": false
+      }
+    ]
+  ],
+  "click": 0,
+  "status_game_success": true,
+  "CreateAt": {
+    "$date": "2021-06-27T14:39:19.198Z"
+  },
+  "UpdateAt": {
+    "$date": "2021-06-27T14:39:19.198Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d733d1e3eea114d012ce0d"
+  },
+  "username": "dartz",
+  "number_of_cards": 12,
+  "card": [
+    [
+      {
+        "number": 6,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 5,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 5,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 2,
+        "status_open": true,
+        "status_success": true
+      }
+    ],
+    [
+      {
+        "number": 1,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 4,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 6,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 2,
+        "status_open": true,
+        "status_success": true
+      }
+    ],
+    [
+      {
+        "number": 4,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 1,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 3,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 3,
+        "status_open": true,
+        "status_success": true
+      }
+    ]
+  ],
+  "click": 12,
+  "status_game_success": true,
+  "CreateAt": {
+    "$date": "2021-06-27T15:13:12.071Z"
+  },
+  "UpdateAt": {
+    "$date": "2021-06-27T14:39:19.198Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d74c42e3eea14b18c545dd"
+  },
+  "username": "dartz",
+  "number_of_cards": 12,
+  "card": [
+    [
+      {
+        "number": 3,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 4,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 4,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 6,
+        "status_open": false,
+        "status_success": false
+      }
+    ],
+    [
+      {
+        "number": 1,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 2,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 6,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 5,
+        "status_open": false,
+        "status_success": false
+      }
+    ],
+    [
+      {
+        "number": 1,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 2,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 3,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 5,
+        "status_open": false,
+        "status_success": false
+      }
+    ]
+  ],
+  "click": 4,
+  "status_game_success": false,
+  "CreateAt": {
+    "$date": "2021-06-27T14:39:19.198Z"
+  },
+  "UpdateAt": {
+    "$date": "2021-06-27T14:39:19.198Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d75a18e3eea104e0d32e24"
+  },
+  "username": "dartz",
+  "number_of_cards": 12,
+  "card": [
+    [
+      {
+        "number": 6,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 5,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 3,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 3,
+        "status_open": true,
+        "status_success": true
+      }
+    ],
+    [
+      {
+        "number": 1,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 2,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 6,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 1,
+        "status_open": true,
+        "status_success": true
+      }
+    ],
+    [
+      {
+        "number": 4,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 2,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 5,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 4,
+        "status_open": true,
+        "status_success": true
+      }
+    ]
+  ],
+  "click": 12,
+  "status_game_success": true,
+  "CreateAt": {
+    "$date": "2021-06-27T14:39:19.198Z"
+  },
+  "UpdateAt": {
+    "$date": "2021-06-27T14:39:19.198Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d75aade3eea13c7419ed9b"
+  },
+  "username": "dartz",
+  "number_of_cards": 12,
+  "card": [
+    [
+      {
+        "number": 3,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 1,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 3,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 2,
+        "status_open": true,
+        "status_success": true
+      }
+    ],
+    [
+      {
+        "number": 5,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 4,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 5,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 1,
+        "status_open": true,
+        "status_success": true
+      }
+    ],
+    [
+      {
+        "number": 6,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 6,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 2,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 4,
+        "status_open": true,
+        "status_success": true
+      }
+    ]
+  ],
+  "click": 12,
+  "status_game_success": false,
+  "CreateAt": {
+    "$date": "2021-06-27T14:39:19.198Z"
+  },
+  "UpdateAt": {
+    "$date": "2021-06-27T14:39:19.198Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d88d97e3eea128cc434a5d"
+  },
+  "username": "dartz",
+  "number_of_cards": 12,
+  "card": [
+    [
+      {
+        "number": 6,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 2,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 5,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 6,
+        "status_open": false,
+        "status_success": false
+      }
+    ],
+    [
+      {
+        "number": 1,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 1,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 4,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 2,
+        "status_open": false,
+        "status_success": false
+      }
+    ],
+    [
+      {
+        "number": 3,
+        "status_open": true,
+        "status_success": true
+      },
+      {
+        "number": 5,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 4,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 3,
+        "status_open": true,
+        "status_success": true
+      }
+    ]
+  ],
+  "click": 28,
+  "status_game_success": false,
+  "CreateAt": {
+    "$date": "2021-06-28T08:44:40.474Z"
+  },
+  "UpdateAt": {
+    "$date": "2021-06-27T14:39:19.198Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d89f28e3eea15a04da27f9"
+  },
+  "username": "dartz",
+  "number_of_cards": 12,
+  "card": [
+    [
+      {
+        "number": 4,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 5,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 2,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 6,
+        "status_open": false,
+        "status_success": false
+      }
+    ],
+    [
+      {
+        "number": 4,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 1,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 3,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 3,
+        "status_open": false,
+        "status_success": false
+      }
+    ],
+    [
+      {
+        "number": 5,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 2,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 1,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 6,
+        "status_open": false,
+        "status_success": false
+      }
+    ]
+  ],
+  "click": 0,
+  "status_game_success": false,
+  "CreateAt": {
+    "$date": "2021-06-27T15:54:16.877Z"
+  },
+  "UpdateAt": {
+    "$date": "2021-06-27T15:54:16.877Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d8a0b0e3eea15a04da27fa"
+  },
+  "username": "dartz",
+  "number_of_cards": 12,
+  "card": [
+    [
+      {
+        "number": 3,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 2,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 5,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 1,
+        "status_open": false,
+        "status_success": false
+      }
+    ],
+    [
+      {
+        "number": 5,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 4,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 6,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 4,
+        "status_open": false,
+        "status_success": false
+      }
+    ],
+    [
+      {
+        "number": 6,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 2,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 1,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 3,
+        "status_open": false,
+        "status_success": false
+      }
+    ]
+  ],
+  "click": 0,
+  "status_game_success": false,
+  "CreateAt": {
+    "$date": "2021-06-27T16:00:48.916Z"
+  },
+  "UpdateAt": {
+    "$date": "2021-06-27T16:00:48.916Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d95767e3eea131e4cafa6c"
+  },
+  "username": "dartz",
+  "number_of_cards": 12,
+  "card": [
+    [
+      {
+        "number": 1,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 5,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 3,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 5,
+        "status_open": false,
+        "status_success": false
+      }
+    ],
+    [
+      {
+        "number": 6,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 3,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 4,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 2,
+        "status_open": false,
+        "status_success": false
+      }
+    ],
+    [
+      {
+        "number": 2,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 6,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 1,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 4,
+        "status_open": false,
+        "status_success": false
+      }
+    ]
+  ],
+  "click": 0,
+  "status_game_success": false,
+  "CreateAt": {
+    "$date": "2021-06-28T05:00:23.693Z"
+  },
+  "UpdateAt": {
+    "$date": "2021-06-28T05:00:23.693Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d98bdfe3eea143848186c0"
+  },
+  "username": "dartz",
+  "number_of_cards": 12,
+  "card": [
+    [
+      {
+        "number": 6,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 1,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 4,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 6,
+        "status_open": false,
+        "status_success": false
+      }
+    ],
+    [
+      {
+        "number": 3,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 5,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 2,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 4,
+        "status_open": false,
+        "status_success": false
+      }
+    ],
+    [
+      {
+        "number": 2,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 1,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 3,
+        "status_open": false,
+        "status_success": false
+      },
+      {
+        "number": 5,
+        "status_open": false,
+        "status_success": false
+      }
+    ]
+  ],
+  "click": 0,
+  "status_game_success": false,
+  "CreateAt": {
+    "$date": "2021-06-28T08:44:15.986Z"
+  },
+  "UpdateAt": {
+    "$date": "2021-06-28T08:44:15.986Z"
+  }
+}]
