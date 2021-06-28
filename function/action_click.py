@@ -89,11 +89,9 @@ def func_check_game_success(transaction_id,card_all,number_of_cards,username,res
                 if (card_all[i][y]['status_open'] == True and card_all[i][y]['status_success'] == True):
                     count_success += 1
                     if count_success == number_of_cards:
-                        print ('game_success')
                         result_update_game = update_mongo().update_transaction_card_match_success(transaction_id)
                         if result_update_game[0] == True:
                             result_select_score = select().select_my_score(username)
-                            print ('result_select_score:',result_select_score[1])
                             if result_select_score[0] == True:
                                 if result_select_score[1] == None:
                                     result_update_score = update().update_my_score(username,result_click)
