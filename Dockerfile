@@ -1,7 +1,7 @@
 FROM python:3.7
 
-RUN apt-get update -y
-RUN apt-get upgrade -y
+RUN apt-get update
+RUN apt-get upgrade
 RUN apt-get install python3-dev build-essential  gcc  -y
 
 WORKDIR /app

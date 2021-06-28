@@ -113,7 +113,7 @@ async def action_open_card(response: Response,request: Request):
             return {"status_code" : 401,"message": 'Unauthorized',"data" : None}
         body_req = await request.json()
         if ((body_req['transaction_id'] == None or body_req['transaction_id'] == '') or (body_req['position_row'] == None or body_req['position_row'] == '') or (body_req['position_column'] == None or body_req['position_column'] == '')):
-            print ('SSS')
+            response.status_code = 400
             return {
             "status_code" : 400,
             "message": 'Invalid parameter',

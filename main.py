@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from config.lib import *
 from config.value import *
-from api.api import *
 from api.login import *
 from api.game import *
 
