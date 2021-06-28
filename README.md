@@ -3,7 +3,7 @@
 ถ้าใบที่ 1 กับ ใบที่ 2 เป็นเลขเดียวกัน ไพ่ 2 ใบนั้นจะถูกเปิดไว้ แต่ถ้าไม่ตรงกัน ไพ่จะคว่ำลงทั้ง 2 ใบ
 การเปิดไพ่ 1 ใบ เท่ากับ การคลิก 1 ครั้ง จำนวนคลิกน้อยที่สุดคือดี (น้อยสุด 12 ครั้ง)
 ## Language and Database
-**Programming Language** : Python 3.7
+**Programming Language** : Python 3.7, 
 **Database** : MongoDB and MariaDB
 ## File and Folder Description
 * Folder
