@@ -116,5 +116,7 @@ def process_open_card(token_header,transaction_id,position_column,position_row):
                 return [False,result_select_game[1]]
         else:
             return [False,'Invalid Token']
+    except IndexError:
+        return [False,'Invalid position']
     except Exception as e:
         return [False,str(e)]
