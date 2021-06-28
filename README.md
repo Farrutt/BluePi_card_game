@@ -30,6 +30,8 @@
 				* **tb_token_202106281554.csv** : คือ ตัวอย่างข้อมูลของตาราง tb_token ของ mariaDB
 			
         **MongoDB** : คือ โฟลเดอร์ที่เก็บ example data ของ MongoDB
+            * **File in 2**
+               * **transaction_card.json** : คือ ตัวอย่างข้อมูลของ collection transaction_card ของ MongoDB
     * **database** : คือ โฟลเดอร์ที่เก็บไฟล์เกี่ยวกับการ query database แบบต่างๆ
         * **File in**
 			* **db_insert.py** : คือ ไฟล์ที่ใช้เก็บคำสั่ง query insert ค่าต่างๆ ของ MariaDB
