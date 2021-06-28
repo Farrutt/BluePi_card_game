@@ -6,38 +6,50 @@
 **Programming Language** : Python 3.7, 
 **Database** : MongoDB and MariaDB
 ## File and Folder Description
-* Folder
-    * api : คือ โฟลเดอร์ที่เก็บไฟล์เกี่ยวกับ Api ที่ใช้ใน project
-        * File
-        **game.py** : คือ ไฟล์ Api ทั้งหมดที่เกี่ยวกับตัวเกมส์
-        **login.py** : คือ ไฟล์ Api ทั้งหมดที่เกี่ยวกับการ login
+* **Folder**
+    * **api** : คือ โฟลเดอร์ที่เก็บไฟล์เกี่ยวกับ Api ที่ใช้ใน project
+        * **File in**
+			* **game.py** : คือ ไฟล์ Api ทั้งหมดที่เกี่ยวกับตัวเกมส์
+			* **login.py** : คือ ไฟล์ Api ทั้งหมดที่เกี่ยวกับการ login
 
-    * config : คือ โฟลเดอร์ที่เก็บไฟล์เกี่ยวกับการ config, connect db, lib, ตั้งค่าหรือตัวแปรต่างๆ
-        * File
-        **db_connect.py** : คือ ไฟล์เกี่ยวกับการเชื่อมต่อ database ของ MariaDB
-        **lib.py** : คือ ไฟล์ที่ใช้ import library ต่างๆที่ใช้ในโปรเจค
-        **mongo_connect.py** : คือ ไฟล์เกี่ยวกับการเชื่อมต่อ database ของ MongoDB
-        **value.py** : คือ ไฟล์ที่เก็บตัวแปรที่กำหนดค่าตายตัวไว้
-    * database : คือ โฟลเดอร์ที่เก็บไฟล์เกี่ยวกับการ query database แบบต่างๆ
-        * File
-        **db_insert.py** : คือ ไฟล์ที่ใช้เก็บคำสั่ง query insert ค่าต่างๆ ของ MariaDB
-        **db_select.py** : คือ ไฟล์ที่ใช้เก็บคำสั่ง query select ค่าต่างๆ ของ MariaDB
-        **db_update.py** : คือ ไฟล์ที่ใช้เก็บคำสั่ง query update ค่าต่างๆ ของ MariaDB
-        **mongo_insert.py** : คือ ไฟล์ที่ใช้เก็บคำสั่ง insert ค่าต่างๆ ของ MongoDB
-        **mongo_select.py** : คือ ไฟล์ที่ใช้เก็บคำสั่ง find ค่าต่างๆ ของ MongoDB
-        **mongo_update.py** : คือ ไฟล์ที่ใช้เก็บคำสั่ง update ค่าต่างๆ ของ MongoDB
-    * function : คือ โฟลเดอร์ที่เก็บไฟล์เกี่ยวกับ function ย่อยในการทำงาน
-        * File
-        **action_click.py** : คือ ไฟล์ที่ใช้เก็บ function ของการคลิกเปิดไพ่
-        **generate_card.py** : คือ ไฟล์ที่ใช้เก็บ function ของการ generate ไพ่ใหม่เมื่อกด newgame
-        **generate_key.py** : คือ ไฟล์ที่ใช้เก็บ function ของการ generate token หรือ secret key ต่างๆจาก api login
-    * method : คือ โฟลเดอร์ที่เก็บไฟล์ที่เป็นตัวกลางในการจัดการ process จากทุกๆ Api
-        * File
-        **game_process.py** : คือ ไฟล์ที่ใช้ในการเก็บ function การประมวลผลเกี่ยวกับตัว game ทั้งหมด
-        **login_process.py** : คือ ไฟล์ที่ใช้ในการเก็บ function การประมวลผลเกี่ยวกับการ login ทั้งหมด
-* File
-    **main.py** : คือ ไฟล์ที่ใช้ในการกำหนดค่าต่างๆที่ใช้ในการ run project
-    **requirements.txt** : คือ ไฟล์ที่ใช้ในการเก็บชื่อและเวอร์ชั่นของ library เพื่อใช้ในการ install
+    * **config** : คือ โฟลเดอร์ที่เก็บไฟล์เกี่ยวกับการ config, connect db, lib, ตั้งค่าหรือตัวแปรต่างๆ
+        * **File in**
+			* **db_connect.py** : คือ ไฟล์เกี่ยวกับการเชื่อมต่อ database ของ MariaDB
+			* **lib.py** : คือ ไฟล์ที่ใช้ import library ต่างๆที่ใช้ในโปรเจค
+			* **mongo_connect.py** : คือ ไฟล์เกี่ยวกับการเชื่อมต่อ database ของ MongoDB
+			* **value.py** : คือ ไฟล์ที่เก็บตัวแปรที่กำหนดค่าตายตัวไว้
+    * **document** : คือ โฟลเดอร์ที่เก็บไฟล์เอกสาร หรือ data ต่างๆเช่น ไฟล์ URL published documentation postman, database structure, database example data, example postman api
+        * **File in**
+        **API_Card_Game.postman_collection.json** : คือ ไฟล์ตัวอย่าง Collection API ที่สามารถนำไป import ใน Postman ได้
+        **publish_api_postman.txt** : คือ ไฟล์ที่เก็บ URL published documentation postman
+        * **Folder**
+        **MariaDB** : คือ โฟลเดอร์ที่เก็บ structure sql, example data ของ MariaDB
+			* **File in 2**
+				* **structure_sql_mariaDB.txt** : คือ sql structure นำไป run แล้วจะได้โครงสร้างตารางของ mariaDB
+				* **tb_account_202106281553.csv** : คือ ตัวอย่างข้อมูลของตาราง tb_account ของ mariaDB
+				* **tb_token_202106281554.csv** : คือ ตัวอย่างข้อมูลของตาราง tb_token ของ mariaDB
+			
+        **MongoDB** : คือ โฟลเดอร์ที่เก็บ example data ของ MongoDB
+    * **database** : คือ โฟลเดอร์ที่เก็บไฟล์เกี่ยวกับการ query database แบบต่างๆ
+        * **File in**
+			* **db_insert.py** : คือ ไฟล์ที่ใช้เก็บคำสั่ง query insert ค่าต่างๆ ของ MariaDB
+			* **db_select.py** : คือ ไฟล์ที่ใช้เก็บคำสั่ง query select ค่าต่างๆ ของ MariaDB
+			* **db_update.py** : คือ ไฟล์ที่ใช้เก็บคำสั่ง query update ค่าต่างๆ ของ MariaDB
+			* **mongo_insert.py** : คือ ไฟล์ที่ใช้เก็บคำสั่ง insert ค่าต่างๆ ของ MongoDB
+			* **mongo_select.py** : คือ ไฟล์ที่ใช้เก็บคำสั่ง find ค่าต่างๆ ของ MongoDB
+			* **mongo_update.py** : คือ ไฟล์ที่ใช้เก็บคำสั่ง update ค่าต่างๆ ของ MongoDB
+    * **function** : คือ โฟลเดอร์ที่เก็บไฟล์เกี่ยวกับ function ย่อยในการทำงาน
+        * **File in**
+        	* **action_click.py** : คือ ไฟล์ที่ใช้เก็บ function ของการคลิกเปิดไพ่
+        	* **generate_card.py** : คือ ไฟล์ที่ใช้เก็บ function ของการ generate ไพ่ใหม่เมื่อกด newgame
+        	* **generate_key.py** : คือ ไฟล์ที่ใช้เก็บ function ของการ generate token หรือ secret key ต่างๆจาก api login
+    * **method** : คือ โฟลเดอร์ที่เก็บไฟล์ที่เป็นตัวกลางในการจัดการ process จากทุกๆ Api
+        * **File in**
+        	* **game_process.py** : คือ ไฟล์ที่ใช้ในการเก็บ function การประมวลผลเกี่ยวกับตัว game ทั้งหมด
+        	* **login_process.py** : คือ ไฟล์ที่ใช้ในการเก็บ function การประมวลผลเกี่ยวกับการ login ทั้งหมด
+* **File**
+    * **main.py** : คือ ไฟล์ที่ใช้ในการกำหนดค่าต่างๆที่ใช้ในการ run project
+    * **requirements.txt** : คือ ไฟล์ที่ใช้ในการเก็บชื่อและเวอร์ชั่นของ library เพื่อใช้ในการ install
 # Folder step Work
 api > method > function,database > method > api
 # API Description
