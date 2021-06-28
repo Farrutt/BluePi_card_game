@@ -143,7 +143,7 @@ api > method > function,database > method > api
 * position_row (Type: String) คือ row ของไพ่ใบที่ user คลิกเลือก (มีค่าตั้งแต่ 0-3)
 และ response ใน key data ที่ได้จะประกอบด้วย
 
-**Request**
+**Response**
 
 * this_card (Type: Int) คือ เลขหน้าไพ่ใบที่กดเปิด
 * card_all (Type: Array) คือ ไพ่ทั้งหมดในชุด พร้อมสถานะ 
