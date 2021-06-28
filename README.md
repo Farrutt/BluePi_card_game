@@ -57,6 +57,7 @@ api > method > function,database > method > api
 # API Description
 ### 1. /card_game/add_user 
 **Method: POST**
+
 เป็น api ที่ใช้ในการเพิ่ม user เข้าสู่ฐานข้อมูลของเกมส์ โดยจะรับค่าแบบ json body ซึ่งเป็น key 2 ตัว คือ username, password ถ้า username ที่ใส่เข้าไป ไม่ซ้ำกับ username ที่มีอยู่แล้วในฐานข้อมูล ก็จะสามารถเพิ่ม user ได้
 **Example request** :
 ``` 
@@ -97,6 +98,7 @@ api > method > function,database > method > api
 ```
 ### 3. /card_game/new_game
 **Method: POST**
+
 เป็น api ที่ใช้ในการ new game (ปุ่ม new game) โดยต้องใส่ request Header Authorization ในรูปแบบ Type Bearer Token คือ Token ที่ได้จากการ Login ไปด้วย ซึ่งเมื่อใช้ api ตัวนี้ จะเป็นการ generate ตำแหน่งตัวเลข 1-6 หรือ สุ่มตำแหน่งไพ่ ทั้ง 12 ใบ และได้ออกมาเป็น list ของไพ่ทั้ง 12 ใบ ในรูปแบบของ row, column และเก็บไว้ใน MongoDB จากนั้นตัว api นี้จะ response id ของชุดไพ่นี้ออกมาให้
 
 **Example response** :
@@ -109,6 +111,7 @@ api > method > function,database > method > api
 ```
 ### 4. /card_game/get_global_score
 **Method: GET**
+
 เป็น api ที่ใช้ในการ get คะแนนที่ดีที่สุดของ user จาก user ทั้งหมด หรือก็คือ Global best โดยต้องใส่ request Header Authorization ในรูปแบบ Type Bearer Token คือ Token ที่ได้จากการ Login และตัว api จะ response ค่า Global best ออกมาให้
 **Example response** :
 ``` 
@@ -120,6 +123,7 @@ api > method > function,database > method > api
 ```
 ### 5. /card_game/get_my_score
 **Method: GET**
+
 เป็น api ที่ใช้ในการ get คะแนนที่ดีที่สุดของตัวเอง หรือก็คือ My best โดยต้องใส่ request Header Authorization ในรูปแบบ Type Bearer Token คือ Token ที่ได้จากการ Login และตัว api จะ response ค่า My best ออกมาให้
 ``` 
 {
@@ -130,7 +134,8 @@ api > method > function,database > method > api
 ```
 ### 6. /card_game/action_open_card
 **Method: POST**
-เป็น api ที่ใช้ในการเปิดไพ่ในแต่ละครั้ง(เมื่อคลิกเลือกไพ่ใช้ api ตัวนี้) โดยต้องใส่ request Header Authorization ในรูปแบบ Type Bearer Token คือ Token ที่ได้จากการ Login และ request แบบ json body ซึ่งเป็น key 3 ตัว คือ 
+
+เป็น api ที่ใช้ในการเปิดไพ่ในแต่ละครั้ง(เมื่อคลิกเลือกไพ่ใช้ api ตัวนี้) โดยต้องใส่ request Header Authorization ในรูปแบบ Type Bearer Token คือ Token ที่ได้จากการ Login และ request แบบ json body ซึ่งเป็น key 3 ตัว คือ
 * transaction_id (Type: String) คือ id ของชุดไพ่ ที่ได้จากการใช้ api /card_game/new_game 
 * position_column (Type: String) คือ column ของไพ่ใบที่ user คลิกเลือก (มีค่าตั้งแต่ 0-2)
 * position_row (Type: String) คือ row ของไพ่ใบที่ user คลิกเลือก (มีค่าตั้งแต่ 0-3)
