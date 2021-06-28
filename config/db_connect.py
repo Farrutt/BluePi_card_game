@@ -5,11 +5,11 @@ from config.value import *
 # Connect to MariaDB Platform
 try:
     conn = mariadb.connect(
-        user = "root",
-        password = "",
-        host = "localhost",
-        port = 3306,
-        database="BluePi"
+        user = MARIADB_USER,
+        password = MARIADB_PASSWORD,
+        host = MARIADB_HOST,
+        port = MARIADB_PORT,
+        database = MARIADB_DATABASE
     )
     # print ('conn:',conn)
     

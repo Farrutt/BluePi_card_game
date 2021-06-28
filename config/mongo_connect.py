@@ -2,7 +2,7 @@ from config.lib import *
 from config.value import *
 
 # Connect mongodb
-myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+myclient = pymongo.MongoClient(URL_MONGO)
 
 # My DB
-mydb = myclient["Card_game"]
+mydb = myclient[DB_MONGO]
