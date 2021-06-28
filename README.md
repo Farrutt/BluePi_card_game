@@ -20,8 +20,8 @@
 			* **value.py** : คือ ไฟล์ที่เก็บตัวแปรที่กำหนดค่าตายตัวไว้
     * **document** : คือ โฟลเดอร์ที่เก็บไฟล์เอกสาร หรือ data ต่างๆเช่น ไฟล์ URL published documentation postman, database structure, database example data, example postman api
         * **File in**
-        **API_Card_Game.postman_collection.json** : คือ ไฟล์ตัวอย่าง Collection API ที่สามารถนำไป import ใน Postman ได้
-        **publish_api_postman.txt** : คือ ไฟล์ที่เก็บ URL published documentation postman
+        	* **API_Card_Game.postman_collection.json** : คือ ไฟล์ตัวอย่าง Collection API ที่สามารถนำไป import ใน Postman ได้
+        	* **publish_api_postman.txt** : คือ ไฟล์ที่เก็บ URL published documentation postman
         * **Folder**
         **MariaDB** : คือ โฟลเดอร์ที่เก็บ structure sql, example data ของ MariaDB
 			* **File in 2**
