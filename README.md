@@ -78,7 +78,8 @@ api > method > function,database > method > api
 ```
 ### 2. /card_game/login
 **Method: POST**
-เป็น api ที่ใช้ในการ login เข้าสู่ตัวเกมส์ โดยจะรับค่าแบบ json body ซึ่งเป็น key 2 ตัว คือ username, password ถ้า username และ password ถูกต้องตามข้อมูลที่มีในฐานข้อมูล ก็จะสามารถ login ได้ และ api จะ response token (อยู่ใน key data)ที่ใช้สำหรับการ Authen ใน api ตัวอื่นๆ
+
+	เป็น api ที่ใช้ในการ login เข้าสู่ตัวเกมส์ โดยจะรับค่าแบบ json body ซึ่งเป็น key 2 ตัว คือ username, password ถ้า username และ password ถูกต้องตามข้อมูลที่มีในฐานข้อมูล ก็จะสามารถ login ได้ และ api จะ response token (อยู่ใน key data)ที่ใช้สำหรับการ Authen ใน api ตัวอื่นๆ
 **Example request** :
 ``` 
 {
