@@ -144,10 +144,11 @@ api > method > function,database > method > api
 * card_all (Type: Array) คือ ไพ่ทั้งหมดในชุด พร้อมสถานะ 
     * number (Type: Int) = หมายเลขหน้าไพ่ (ถ้าเป็น null คือไพ่ใบนั้นคว่ำอยู่)
     * status_open (Type: Boolean) = true คือเปิดแล้ว, false คือยังไม่ถูกเปิด(คว่ำ)
-    * click (Type: Int) = จำนวนครั้งที่คลิก
-    * status_game (Type: String) = สถานะที่บ่งบอกว่าเกมส์นี้จบ(จับคู่ครบ)หรือยัง In_progress = เกมส์ยังไม่จบ, Complete = เกมส์นี้จบแล้ว(ครบคู่)
-    * global_score (Type: Int) = คะแนนที่ดีที่สุดของ user ทั้งหมด
-    * my_best (Type: Int) = คะแนนที่ดีที่สุดของตัวเอง
+    * status_success (Type: Boolean) = true จับคู่สำเร็จแล้ว, false จับคู่ยังไม่สำเร็จ
+* click (Type: Int) = จำนวนครั้งที่คลิก
+* status_game (Type: String) = สถานะที่บ่งบอกว่าเกมส์นี้จบ(จับคู่ครบ)หรือยัง In_progress = เกมส์ยังไม่จบ, Complete = เกมส์นี้จบแล้ว(ครบคู่)
+* global_score (Type: Int) = คะแนนที่ดีที่สุดของ user ทั้งหมด
+* my_best (Type: Int) = คะแนนที่ดีที่สุดของตัวเอง
 ``` 
 {
     "status_code": 200,
@@ -222,10 +223,10 @@ api > method > function,database > method > api
                 }
             ]
         ], // ไพ่ทั้งหมดในชุด id 
-        "click": 26,
-        "status_game": "In_progress",
-        "global_score": 12,
-        "my_best": 12
+        "click": 26, // จำนวนครั้งที่คลิก
+        "status_game": "In_progress", // สถานะของเกมส์ In_progress = เกมส์ยังไม่จบ, Complete = เกมส์นี้จบแล้ว(ครบคู่)
+        "global_score": 12, // Global Best
+        "my_best": 12 // My Best
     }
 }
 ```
